@@ -1,0 +1,44 @@
+/* Contact*/
+.container {
+    max-width: 600px;
+    margin: 150px;
+
+}
+
+form {
+    padding: 1em;
+    background: rgb(88, 88, 88);
+    border-radius: 1rem;
+}
+
+input {
+    width: 96%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: rgb(0, 0, 0);
+    border: black;
+    width: 200px;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: aliceblue;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2px;
+}

@@ -23,51 +23,33 @@ html {
     font-size: 1.5em;
 }
 .postContainer {
-    margin: 85px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .postContainer {
-        border-radius: 3px;
-        box-shadow: 5px 5px 13px 7px #8080804f;
-        padding: 10px;
-        margin: 5px;
-        background-color: #69b47f;
-    }
-    
-    .postContainer a p {
-        width: 250px;
-    }
-    
-    .postContainer img {
-        height: 150px;
-        width: 300px;
-        object-fit: cover;
-    }
-    
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-        background: #69b47f;
-    }
-    
-    .nav ul {
-        display: flex;
-        list-style: none;
-    }
-    
-    .nav li {
-        padding-left: 1rem;
+    display: inline-flex;
+
 
 }
+.nav{
+    list-style-type: none
+}
 
-.nav a {
+  
+  .nav li a {
+    display: inline;
+    float: left;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: color 500ms ease-in-out;
     text-decoration: none;
-    font-size: 2.0em;
-}
+    
+  }
+  
+  .nav li a.active {
+    text-decoration: underline;
+  }
+  
+  .nav li a:hover {
+    color: var(--secondary);
+  }
 /* Contact*/
 .container {
     max-width: 600px;

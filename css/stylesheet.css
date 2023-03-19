@@ -1,8 +1,31 @@
 .postContainer {
-    display: inline-flex;
+    display: grid;
 
 
 }
+.nav{
+    list-style-type: none
+}
+
+  
+  .nav li a {
+    display: inline;
+    float: left;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: color 500ms ease-in-out;
+    text-decoration: none;
+    
+  }
+  
+  .nav li a.active {
+    text-decoration: underline;
+  }
+  
+  .nav li a:hover {
+    color: var(--secondary);
+  }
 /* Contact*/
 .container {
     max-width: 600px;

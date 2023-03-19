@@ -5,7 +5,30 @@ const moreButton = document.querySelector(".button_viewMore");
 const error = document.querySelector(".error");
 
 
-async function getPosts (url) {
+
+
+async function getPosts(url){
+    
+    const response = await fetch(url);
+    const results = await response.json();
+    console.log(results);
+    console.log(results[0]._embedded['wp:featuredmedia']);
+
+    for (let i = 0; i < results.length; i++) {
+        postContainer.innerHTML +=
+        `<div class="postHeading">
+        <h2>${results[i].title.rendered}</h2></div>
+        <div class="postText"> ${results[i].excerpt.rendered}</div>
+        <img src="${results[i]._embedded['wp:featuredmedia'][0].source_url}" />
+    
+            `
+    }}
+        getPosts(baseUrl);
+
+
+
+
+/*async function getPosts () {
     const data = await fetch(url);
     const result = await data.json();
     console.log(result);
@@ -38,6 +61,7 @@ async function getPosts (url) {
 }
  
 getPosts(baseUrl);
+*/
 
 
 
@@ -46,20 +70,3 @@ getPosts(baseUrl);
 
 
 
-
-/*async function getPosts(){
-    
-    const response = await fetch(url);
-    const results = await response.json();
-    console.log(results)
-    console.log(results[0].embedded.wpfeaturedmedia);
-
-    for (let i = 0; i < results.length; i++) {
-        postContainer.innerHTML +=
-        `<div class="postHeading">
-        <h2>${results[i].title.rendered}</h2></div>
-        <img src=${results[i]_embedded.['wp:featuredmedia']['0'].media_details.sizes.medium.source_url}/>
-    }
-            `
-    }}
-        getPosts(url);*/

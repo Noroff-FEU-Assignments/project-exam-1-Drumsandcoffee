@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link href="css/stylesheet.css" rel="stylesheet" />
     <link href="https://db.onlinewebfonts.com/c/179c9be0148284abe6ecb8bd89c67560?family=Exocet+Light" rel="stylesheet">
     <script defer src="js/script.js"></script>
-    <title>Drummer Life - Home</title>
+    <title class="specific-post-title">Drummer Life</title>
 </head>
+
 <body>
     <nav class="nav_container">
         <a href="/index.html">
@@ -19,30 +21,29 @@
         </a>
         <div class="nav_bar">
             <ul class="nav_list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <header class="header">
-        <div class=" headerText">
-            <h1 class="mainHeading"> Drummer Life</h1>
-        </div>
-        <a href="blog.html"><button class="headerButton">Enter Blog</button></a>
-</header>
-<main>
-    <section class="latestPosts_section">
-        <h1>My Latest Posts</h1>
-        <div class="carousel_container">
-            <button class="carouselbtn_left">&#8656;</button>
-            <button class="carouselbtn_right">&#8658;</button>
+    <header></header>
+    <main>
+        <section>
+            <h1 class="post-h1">Blog</h1>
+            <div id="modal" class="modal">
+                <img id="modal-image" class="modal-image">
+                <p class="modal-text">Click outside the image to close</p>
+            </div>
+            <div class="specific-post-container"></div>
+            <div class="specific-button-container">
+                <a href="/blog.html">
+                    <button class="returnBtn">Return to Blog</button>
+                </a>
+            </div>
+        </section>
 
-        </div>
-        <a href="blog.html"><button class="allpostsButton">All Posts</button></a>
-
-    </section>
     </main>
     <footer>
         <div class="footer_container">

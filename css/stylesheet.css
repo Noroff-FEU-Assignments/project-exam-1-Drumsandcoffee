@@ -1,76 +1,116 @@
+@import url(https://db.onlinewebfonts.com/c/179c9be0148284abe6ecb8bd89c67560?family=Exocet+Light);
 html {
-    background-color: rgb(201, 216, 199);
+    background-color: rgb(51, 50, 50);
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .nav_container {
+        background-color: gray;
+        height: 100px;
+        padding: 10px 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.logo_img {
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: baseline;
+}
+
+.drummerlife_logotext {
+    font-family: "Exocet Light";
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding-top: 5vh;
+    padding-left: 0;
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.nav_container {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_list li a {
+    transition: color 500ms ease-in-out;
+    text-decoration: none;
+}
+
+.nav li a.active {
+    text-decoration: underline;
+}
+
+.nav li a:hover {
+    color: red
+    }
+        .header {
+            color: rgb(0, 136, 255);
+            background-image: url(../images/backgroundMain.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+                .headerButton {
+                    position: absolute;
+                    bottom: 10vh;
+                    left: 50%;
+                    background: rgb(0, 0, 0);
+                    border: black;
+                    width: 200px;
+                    padding: 1rem;
+                    color: rgb(255, 255, 255);
+                    margin-top: 10px;
+                    cursor: pointer;
+                    border-radius: 22px;
 }
 
 .mainHeading {
-    text-align: center;
-}
-
-.about {
-    width: 350px;
-    align-items: center;
-    margin: auto;
-    border: 5px;
-    background-color: #69b47f;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 5px 5px 13px 7px #8080804f;
-
-
-}
-
-.aboutText {
-    font-size: 1.5em;
-}
-.postContainer {
-    display: inline-flex;
-
-
-}
-.nav{
-    list-style-type: none
-}
-
-  
-  .nav li a {
-    display: inline;
-    float: left;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
-    transition: color 500ms ease-in-out;
+    font-family: "Exocet Light";
     text-decoration: none;
-    
-  }
-  
-  .nav li a.active {
-    text-decoration: underline;
-  }
-  
-  .nav li a:hover {
-    color: var(--secondary);
-  }
-/* Contact*/
-.container {
-    max-width: 600px;
-    margin: 150px;
-
+    font-weight: bolder;
+    position: absolute;
+    bottom: 25vh;
+    text-align: center;
+    color: rgb(253, 0, 0);
+    padding: 25px;
 }
 
-form {
-    padding: 1em;
-    background: #69b47f;
-    border-radius: 1rem;
+.blogHeading {
+    font-family: "Exocet Light";
+    text-decoration: none;
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+    color: rgb(253, 0, 0);
+    padding: 25px;
 }
-
-input {
-    width: 96%;
-    margin-top: 2px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-button {
+.allpostsButton {
     background: rgb(0, 0, 0);
     border: black;
     width: 200px;
@@ -79,18 +119,42 @@ button {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 22px;
+    position: relative;
+        left: 50%;
+    }
+    
+    .footer_container {
+        min-width: 100vw;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 0;
+    
+    }
+    
+    .carouselbtn_left .carouselbtn_right {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+    }
+    
+    .latestPosts_section {
+        padding-top: 60px;
+    }
+    
+    .postContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 0;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
 }
-
-label {
-    display: block;
-    margin-top: 1rem;
-    color: black;
-}
-
-.form-error {
-    display: none;
-    color: red;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 2px;
-}
+    

@@ -15,10 +15,7 @@ const morePostsButtonContainer = document.querySelector(".more_posts_button_cont
 const morePostsButton = document.querySelector(".more_posts_button");
 const nextButton = document.querySelector("#prevBtn");
 const prevButton = document.querySelector("#nextBtn");
-const specificPostContainer = document.querySelector(".specific-post-container");
-const specificPostTitle = document.querySelector(".specific-post-title");
-const modal = document.querySelector("#modal");
-const modalImage = document.querySelector("#modal-image");
+
 
 
 
